@@ -1,0 +1,106 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" href='style.css'>
+  </head>
+  <body>
+   
+   
+    <center><h1 class="header"><strong>SIGN LANGUAGE TO SPEECH CONVERSION</strong></h1></center>
+    <br><br>
+<div class="video">
+        <img src="{{ url_for('video') }}" width="70%">
+    </div>
+    <div class="container">
+    <form action='/predict' method='post'>
+    <button type="submit" name="start" value="start" class="button1" ><h3>START</h3></button>
+    </form><br><br><br>
+  <form action='/stop' method='post'>
+
+    <button type="submit" name="stop" value="stop" class="button2" ><h3>STOP</h3></button>
+  </form>
+  </div>
+<br>
+<br>
+<div class="team">
+<center>
+<details>
+  <summary><b>TEAM</b></summary>
+  <p><b>IBM ID - IBM-Project-9718-1659069470</b>
+  <br>
+   1.YAMINI<br>
+   2.LAKSHMIPRIYA<br>
+   3.RACHEAL SWARNA KUMAR<br>
+   4.MAHESWARI<br>
+  </p>
+</details>
+</center>
+</div>
+<br>
+<br>
+  <div class="instruction"> 
+    <center> 
+    <p> <details>
+      <summary><b>FOR EFFECTIVE USAGE FOLLOW</b></summary>
+      <p>Once the webcam is <b>ON</b> Click <strong>"START"</strong> to start the predicition model.<br>
+      <br>
+      >>Click <strong>"s"</strong> To save the text.<br>
+      <br>
+      >>Click <strong>"a"</strong> To leave a space.<br>
+      <br>
+      >>Click <strong>"d"</strong> To delete a character from right to left.<br>
+      <br>
+      >>Click <strong>"w"</strong> To delete entire text.<br>
+      <br>
+      >> The Saved text appears on the top left corner of the video screen<br>
+      <br>
+      >> Once you are satisfied with the saved text press<b>"STOP"</b> to convert it into speech<br>
+      <br>
+      >><b>IMPORTANT NOTE: The hand must be on the screen to display the text to save,delete or to leave a space between them.</b>
+           
+      </p>
+    </details></p>
+  </center> 
+</div>
+<br>
+<br>
+<center>
+<div class="alert info">
+  <span class="closebtn">&times;</span>  
+  <strong>IMPORTANT NOTE:</strong> A disturbance-free background with good lighting(White-background) is mostly preferred.
+</div>
+</center>
+<br>
+<center>
+<p><b><h3>If you require any further information,let us know :)</h3></b></p></center>
+<script>
+  var close = document.getElementsByClassName("closebtn");
+  var i;
+  
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+      var div = this.parentElement;
+      div.style.opacity = "0";
+      setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+  }
+  </script>
+  <center>
+  <a class="social-icon"href="https://www.linkedin.com/in/yamini-m-6a3662231?trk=profile-badge" target="_blank">
+    <ion-icon name="logo-linkedin"></ion-icon>
+  </a><br>
+  <a class="git"href="https://github.com/IBM-EPBL/IBM-Project-9718-1659069470.git" target="_blank">
+    <ion-icon name="logo-github"></ion-icon>
+  </a></center>
+
+  
+          
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+              
+
+  
+  </body>
+</html>
